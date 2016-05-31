@@ -9,8 +9,6 @@ struct EMPLOYEE{
 	int fisrt,second;
 }e1[MAX+1], e2[MAX+1];
 
-
-
 bool comp1(const EMPLOYEE& a, const EMPLOYEE& b){
 	return a.fisrt < b.fisrt;
 }
