@@ -33,7 +33,7 @@ int main(){
     answer[start] = 0;
     chk[start] = 0;
      
-    for(int i=0; i<c_size-1; i++)
+    for(int i=0; i<c_size-1; i++){
         VTX x = pq.top();
         pq.pop();
         if(chk[x.index] == 1)
