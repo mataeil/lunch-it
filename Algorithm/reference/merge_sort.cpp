@@ -8,11 +8,11 @@ bool comp(int A, int B){
 	return  A <= B;
 }
 
-void sort(vector<int>& v, int left, int right){
+void m_sort(vector<int>& v, int left, int right){
 	if(left == right) return;
 	int mid = (left+right)/2;
-	sort(v,left,mid);
-	sort(v,mid+1,right);	
+	m_sort(v,left,mid);
+	m_sort(v,mid+1,right);	
 	
 	vector<int> temp;
 	int cur1=left,cur2=mid+1;	
@@ -47,7 +47,7 @@ int main(){
 		printf("%d ",v[i]);
 	}
 	
-	sort(v,0,v.size()-1);
+	m_sort(v,0,v.size()-1);
 	
 	printf("\nafter sort : ");
 	for(int i=0; i<size; i++){
