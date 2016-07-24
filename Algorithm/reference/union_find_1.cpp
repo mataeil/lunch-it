@@ -17,12 +17,9 @@ void unionSet(int x, int y){
 int main(){
 	for(int i=0; i<100; i++) set[i] = i;
 	
-	unionSet(5,4);
-	unionSet(4,3);
-	unionSet(3,2);
-	unionSet(2,1);
+	for(int i=10; i>1; i--) unionSet(i,i-1);
 	
-	for(int i=1; i<6; i++) printf("%d ",set[i]);
+	for(int i=1; i<=10; i++) printf("%d ",set[i]);
 	
 	return 0;
 } 
